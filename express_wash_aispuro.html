@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Wash Aispuro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77a1d3 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            float: right;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('carwash.jpg') no-repeat 0 -400px;
+            text-align: center;
+            color: #fff;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .main-content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        .main-content h2 {
+            text-align: center;
+            color: #333;
+        }
+        .main-content p {
+            text-align: justify;
+        }
+        .main-content .packages, .memberships {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .main-content .package, .membership {
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 30%;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        .main-content .package h3, .membership h3 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Express Wash Aispuro</h1>
+            <ul>
+                <li><a href="#memberships">Membresías</a></li>
+                <li><a href="#packages">Paquetes</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="showcase">
+        <div class="container">
+            <h1>Bienvenido a Express Wash Aispuro</h1>
+            <p>La mejor calidad en limpieza y cuidado de tu auto</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h2 id="memberships">Membresías</h2>
+            <div class="memberships">
+                <div class="membership">
+                    <h3>Diamond</h3>
+                    <p>1 Paquete A + 1 Extra, 1 Extra al 25% de descuento</p>
+                    <p>2 Aspiradas, 2 Limpiezas Exteriores Secas, 1 Limpieza de Exteriores Húmedas</p>
+                    <p>2 Recubrimientos Especiales para Llantas y Rines</p>
+                    <p>2 Tratamientos de Plásticos Interior y Exterior</p>
+                </div>
+                <div class="membership">
+                    <h3>Gold</h3>
+                    <p>1 Paquete B</p>
+                    <p>1 Extra + 2 Aspiradas</p>
+                    <p>1 Limpieza Exteriores Secas</p>
+                    <p>1 Limpieza de Exteriores Húmedas</p>
+                    <p>1 Recubrimiento Especial para Llantas y Rines</p>
+                    <p>1 Tratamiento de Plásticos Interior y Exterior</p>
+                </div>
+                <div class="membership">
+                    <h3>Silver</h3>
+                    <p>1 Paquete C</p>
+                    <p>1 Extra al 20% de descuento + 1 Aspirada</p>
+                    <p>1 Limpieza Exteriores Secas</p>
+                    <p>1 Recubrimiento Especial para Llantas y Rines</p>
+                    <p>Tratamiento de Plásticos Interior y Exterior</p>
+                </div>
+            </div>
+            <p>Precios:</p>
+            <p>Diamond: $200 x Semana durante 1 mes</p>
+            <p>Gold: $180 x Semana durante 1 mes</p>
+            <p>Silver: $160 x Semana durante 1 mes</p>
+            <p>Al contratarlo por 3 meses o más, tienes un descuento del 20%. El paquete se renueva cada mes.</p>
+
+            <h2 id="packages">Paquetes</h2>
+            <div class="packages">
+                <div class="package">
+                    <h3>Paquete 1</h3>
+                    <p>Limpieza de exterior con recubrimiento de Wax</p>
+                    <p>Recubrimiento especial para rines y llantas</p>
+                    <p>Limpieza e hidratación de plástico interiores y exteriores</p>
+                    <p>Aspirado profundo en interiores</p>
+                    <p>Limpieza profunda en vidrios</p>
+                    <p>Tratamiento express en faros</p>
+                    <p>Precio: $370</p>
+                </div>
+                <div class="package">
+                    <h3>Paquete 2</h3>
+                    <p>Limpieza de exterior con recubrimiento de Wax</p>
+                    <p>Recubrimiento especial para rines y llantas</p>
+                    <p>Limpieza e hidratación de plástico interior y exterior</p>
+                    <p>Tratamiento express de faros</p>
+                    <p>Limpieza profunda en interiores sin aspirado</p>
+                    <p>Precio: $300</p>
+                </div>
+                <div class="package">
+                    <h3>Paquete 3</h3>
+                    <p>Limpieza de exterior con recubrimiento de Wax</p>
+                    <p>Limpieza e hidratación de plástico interior y exterior</p>
+                    <p>Limpieza de interior nivel 1</p>
+                    <p>Tratamiento express en faros</p>
+                    <p>Precio: $260</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Express Wash Aispuro &copy; 2024</p>
+    </footer>
+</body>
+</html>
